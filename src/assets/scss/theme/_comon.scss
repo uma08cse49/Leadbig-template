@@ -4,7 +4,8 @@
 // HEADING AREA //
 .heading1 {
   h5 {
-    color: var(--ztc-text-text-8);
+    // color: var(--ztc-text-text-8);
+    color: var(--ztc-text-text-11);
     font-family: var(--ztc-family-font1);
     font-size: var(--ztc-font-size-font-s20);
     font-style: normal;
@@ -119,7 +120,7 @@
 }
 // BTN Area //
 .vl-btn1 {
-    color: var(--ztc-text-text-4);
+    color: var(--ztc-text-text-1);
     font-family: var(--ztc-family-font1);
     font-size: var(--ztc-font-size-font-s18);
     font-weight: var(--ztc-weight-bold);
@@ -129,7 +130,7 @@
     text-transform: uppercase;
     display: inline-block;
     transition: all .4s;
-    background: var(--ztc-bg-bg-7);
+    background: var(--ztc-bg-bg-10);
     padding: 18px 22px;
     border-radius: var(--rounded-lg, 8px);
     position: relative;
@@ -139,7 +140,7 @@
         transition: all .4s;
         transform: translateY(-5px);
         &::before {
-            border-bottom: 4px solid var(--ztc-bg-bg-1);
+            border-bottom: 4px solid var(--ztc-bg-bg-3);
             transition: all .4s;
         }
         &::after {
@@ -171,7 +172,7 @@
         height: 4px;
         bottom: 0;
         left: 0;
-        border-bottom: 4px solid var(--ztc-bg-bg-2);
+        border-bottom: 4px solid var(--ztc-bg-bg-3);
         transition: all .4s;
         width: 100%;
         z-index: 1;

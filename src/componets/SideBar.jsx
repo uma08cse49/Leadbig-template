@@ -1,4 +1,4 @@
-import logo from "@/assets/img/logo/logo1.png";
+import logo from "@/assets/img/logo/Leadbig-logo.png";
 import { Link } from "react-router-dom";
 import { Offcanvas } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP, FaXmark, FaYoutube } from "react-icons/fa6";

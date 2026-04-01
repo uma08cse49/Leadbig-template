@@ -1,4 +1,4 @@
-import logo from "@/assets/img/logo/logo1.png";
+import logo from "@/assets/img/logo/Leadbig-logo.png";
 import { Col, Container, Row } from "react-bootstrap";
 import AppMenu from "./AppMenu";
 import icon from "@/assets/img/icons/bars-icons1.svg";

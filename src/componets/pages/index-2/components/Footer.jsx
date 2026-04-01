@@ -43,11 +43,11 @@ const Footer = () => {
     }],
     contactInfo: [{
       icon: phone,
-      text: "+1 123 456 7890",
-      url: "tel:+11234567890"
+      text: "+91 99404 27777",
+      url: "tel:+91 99404 27777"
     }, {
       icon: location,
-      text: "421 Allen, Mexico 4233",
+      text: "No. 110/2, Agaram,Perambur Purasawalkam, Chennai - 600082",
       url: "#"
     }, {
       icon: gmail,
@@ -55,21 +55,21 @@ const Footer = () => {
       url: "mailto:renevagency@com"
     }, {
       icon: global,
-      text: "renevagency.com",
-      url: "https://renevagency.com"
+      text: "leadbig.in",
+      url: "https://www.leadbig.in/"
     }],
     socialLinks: [{
       icon: <FaFacebookF />,
-      url: "#"
+      url: "https://www.facebook.com/profile.php?id=61579026411412&sk=about"
     }, {
       icon: <FaLinkedinIn />,
-      url: "#"
+      url: "https://x.com/LeadbigOfficial"
     }, {
       icon: <FaInstagram />,
-      url: "#"
+      url: "https://www.instagram.com/leadbigofficial"
     }, {
       icon: <FaYoutube />,
-      url: "#"
+      url: "https://www.youtube.com/@leadbig"
     }]
   };
   return <>

@@ -91,7 +91,8 @@
 
             .progress-inner {
                 border-radius: 40px;
-                background: var(--ztc-text-text-8);
+                // background: var(--ztc-text-text-8);
+                background: var(--ztc-bg-bg-10);
                 height: 100%;
                 transition: width 0.4s ease;
             }
@@ -326,7 +327,8 @@
                     transition: all .4s;
                     color: var(--ztc-text-text-4);
                     border-radius: 50%;
-                    background: var(--ztc-bg-bg-7);
+                    // background: var(--ztc-bg-bg-7);
+                    background: var(--ztc-bg-bg-10);
                     margin: 0 4px 0 0;
                 }
             }

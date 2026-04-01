@@ -1,6 +1,8 @@
 import bg5 from "@/assets/img/all-images/bg/hero-bg5.png";
-import ele27 from "@/assets/img/elements/elements27.png";
-import ele28 from "@/assets/img/elements/elements28.png";
+// import ele27 from "@/assets/img/elements/elements27.png"; 
+import ele27 from "@/assets/img/elements/LB-Herobanner1.png";
+// import ele28 from "@/assets/img/elements/elements28.png";
+import ele28 from "@/assets/img/elements/LB-Herobanner3.png";
 import ele30 from "@/assets/img/elements/elements30.png";
 import logo from "@/assets/img/icons/sub-logo1.svg";
 import ele29 from "@/assets/img/elements/elements29.png";

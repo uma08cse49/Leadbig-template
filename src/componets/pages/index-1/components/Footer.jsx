@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ele6 from "@/assets/img/elements/elements6.png";
-import logo from "@/assets/img/logo/logo2.png";
+import logo from "@/assets/img/logo/Leadbig-logo.png";
 import phone from "@/assets/img/icons/phn1.svg";
 import location from "@/assets/img/icons/location1.svg";
 import email from "@/assets/img/icons/email1.svg";
@@ -11,16 +11,16 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/f
 const Footer = () => {
   const socialLinks = [{
     icon: <FaFacebookF />,
-    url: "#"
+    url: "https://www.facebook.com/profile.php?id=61579026411412&sk=about"
   }, {
     icon: <FaLinkedinIn />,
-    url: "#"
+    url: "https://x.com/LeadbigOfficial"
   }, {
     icon: <FaInstagram />,
-    url: "#"
+    url: "https://www.instagram.com/leadbigofficial"
   }, {
     icon: <FaYoutube />,
-    url: "#",
+    url: "https://www.youtube.com/@leadbig",
     className: "m-0"
   }];
   const quickLinks = [{
@@ -40,21 +40,21 @@ const Footer = () => {
     url: "/contact"
   }];
   const contactInfo = [{
-    url: "tel:+11234567890",
+    url: "tel:+91 99404 27777",
     icon: phone,
-    text: "+1 123 456 7890"
+    text: "+91 99404 27777"
   }, {
     url: "#",
     icon: location,
-    text: "421 Allen, Mexico 4233"
+    text: "No. 110/2, Agaram,Perambur Purasawalkam, Chennai - 600082"
   }, {
     url: "mailto:renevagency@com",
     icon: email,
-    text: "renevagency@com"
+    text: "leadbig@com"
   }, {
-    url: "#",
+    url: "https://www.leadbig.in/",
     icon: global1,
-    text: "renevagency.com"
+    text: "leadbig.in"
   }];
   return <>
       <div className="cta-btn-area sp8">
@@ -144,7 +144,7 @@ const Footer = () => {
           <Row>
             <Col lg={12}>
               <div className="vl-copyright-area">
-                <p>© Copyright 2024 - Renev. All Right Reserved</p>
+                <p>© Copyright 2024 - Leadbig. All Right Reserved</p>
               </div>
             </Col>
           </Row>

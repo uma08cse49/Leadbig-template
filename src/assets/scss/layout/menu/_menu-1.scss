@@ -30,8 +30,8 @@
 
         .vl-logo {
             img {
-                width: 122px;
-                height: 50px;
+                width: 187px;
+                height: 59px;
                 object-fit: contain;
             }
         }
@@ -320,7 +320,7 @@
                     transition: all .4s;
 
                     &::before {
-                        border-bottom: 4px solid var(--ztc-bg-bg-1);
+                        border-bottom: 4px solid var(--ztc-bg-bg-3);
                         transition: all .4s;
                     }
 
@@ -1228,7 +1228,7 @@
                     transition: all .4s;
 
                     &::before {
-                        border-bottom: 4px solid var(--ztc-bg-bg-1);
+                        border-bottom: 4px solid var(--ztc-bg-bg-3);
                         transition: all .4s;
                     }
 
@@ -1390,8 +1390,8 @@
 
         .vl-logo {
             img {
-                width: 122px;
-                height: 50px;
+                width: 187px;
+                height: 59px;
                 object-fit: contain;
             }
         }

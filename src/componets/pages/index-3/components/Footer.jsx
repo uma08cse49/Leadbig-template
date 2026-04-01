@@ -11,16 +11,16 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/f
 const Footer = () => {
   const socialLinks = [{
     icon: <FaFacebookF />,
-    href: "#"
+    href: "https://www.facebook.com/profile.php?id=61579026411412&sk=about"
   }, {
     icon: <FaLinkedinIn />,
-    href: "#"
+    href: "https://x.com/LeadbigOfficial"
   }, {
     icon: <FaInstagram />,
-    href: "#"
+    href: "https://www.instagram.com/leadbigofficial"
   }, {
     icon: <FaYoutube />,
-    href: "#",
+    href: "https://www.youtube.com/@leadbig",
     className: "m-0"
   }];
   const quickLinks = [{
@@ -40,21 +40,21 @@ const Footer = () => {
     href: "/contact"
   }];
   const contactInfo = [{
-    url: "tel:+11234567890",
+    url: "tel:+91 99404 27777",
     icon: phone,
-    text: "+1 123 456 7890"
+    text: "+91 99404 27777"
   }, {
     url: "#",
     icon: location,
-    text: "421 Allen, Mexico 4233"
+    text: "No. 110/2, Agaram,Perambur Purasawalkam, Chennai - 600082"
   }, {
     url: "mailto:renevagency@com",
     icon: email,
-    text: "renevagency@com"
+    text: "leadbig@com"
   }, {
-    url: "#",
+    url: "https://www.leadbig.in/",
     icon: global1,
-    text: "renevagency.com"
+    text: "leadbig.in"
   }];
   return <>
       <div className="cta-btn-area sp8">

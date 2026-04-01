@@ -16,15 +16,18 @@ const ProjectSingle = lazy(() => import("../componets/pages/project-single"));
 const Project = lazy(() => import("../componets/pages/project"));
 const Services = lazy(() => import("../componets/pages/service"));
 const ServiceSingle = lazy(() => import("../componets/pages/service-single"));
-export const landingRoutes = [{
+export const landingRoutes = [
+  {
   path: "/",
   name: "index1",
   element: <Index1 />
-}, {
+}, 
+{
   path: "/index-2",
   name: "index2",
   element: <Index2 />
-}, {
+}, 
+{
   path: "/index-3",
   name: "index3",
   element: <Index3 />

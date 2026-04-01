@@ -734,7 +734,8 @@
     }
 
     &:hover {
-      background: var(--ztc-bg-bg-7);
+      // background: var(--ztc-bg-bg-7);
+      background: var(--ztc-bg-bg-10);
       transition: all .4s;
 
       h2 {

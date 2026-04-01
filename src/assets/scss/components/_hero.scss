@@ -730,12 +730,16 @@
         left: 0;
         top: 150px;
         top: 0;
+        max-width: 70%;
+        max-height: 60%;
     }
 
     .elements28 {
         position: absolute;
         right: 0;
         bottom: 0;
+        max-width: 70%;
+        max-height: 60%;
     }
 
     .hero-header-area {
@@ -836,7 +840,8 @@
     }
 
     .marquee-wrap {
-        background-color: var(--ztc-text-text-8);
+        // background-color: var(--ztc-text-text-8);
+        background: var(--ztc-bg-bg-10);
         width: 100%;
         position: relative;
 
@@ -886,6 +891,7 @@
     .marquee-wrap {
         width: 100%;
         position: relative;
+        
 
         .marquee-text {
             animation: marquee 30s linear infinite;
@@ -923,6 +929,7 @@
 
                         &:hover {
                             background: var(--ztc-text-text-8);
+                            background: var(--ztc-bg-bg-10);
                             color: var(--ztc-text-text-4);
                             transition: all .4s;
 

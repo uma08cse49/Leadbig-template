@@ -1,5 +1,5 @@
 import search from "@/assets/img/icons/search1.svg";
-import logo from "@/assets/img/logo/logo1.png";
+import logo from "@/assets/img/logo/Leadbig-logo.png";
 import { useEffect, useRef, useState } from "react";
 import AppMenu from "./AppMenu";
 import { Col, Row } from "react-bootstrap";

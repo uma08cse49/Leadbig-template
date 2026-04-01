@@ -6,7 +6,7 @@ const PageMeta = ({
 }) => {
   return <>
       <title>
-        {title ?? "Renev - Modern Creative Digital Agency React Js Template"}
+        {title ?? "Leadbig.in"}
       </title>
 
       {description && <meta property="og:description" content={description} />}

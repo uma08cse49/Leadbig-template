@@ -7,19 +7,23 @@ import image3 from "@/assets/img/all-images/demo/demo-img3.png";
 import image4 from "@/assets/img/all-images/demo/demo-img4.png";
 import { Col, Collapse, Offcanvas, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const homePages = [{
-  image: image1,
-  title: "RENEV - Homepage 01",
-  url: "/index-1"
-}, {
-  image: image2,
-  title: "RENEV - Homepage 02",
-  url: "/index-2"
-}, {
-  image: image3,
-  title: "RENEV - Homepage 03",
-  url: "/index-3"
-}, {
+const homePages = [
+//   {
+//   image: image1,
+//   title: "RENEV - Homepage 01",
+//   url: "/index-1"
+// }, 
+// {
+//   image: image2,
+//   title: "RENEV - Homepage 02",
+//   url: "/index-2"
+// }, 
+// {
+//   image: image3,
+//   title: "RENEV - Homepage 03",
+//   url: "/index-3"
+// }, 
+{
   image: image4,
   title: "RENEV - Homepage 04",
   url: "/index-4"

@@ -67,7 +67,7 @@ const page = () => {
                     </div>
                     <div className="content">
                       <h4>Phone</h4>
-                      <Link to="tel:+11234567890">+1 123 456 7890</Link>
+                      <Link to="tel:+11234567890">+91 99404 27777</Link>
                     </div>
                   </div>
                   <div className="space30 d-lg-none d-block"></div>
