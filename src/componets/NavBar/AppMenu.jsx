@@ -38,10 +38,35 @@ const AppMenu = ({
             </div>}
 
           {menuItem.children && <ul className="sub-menu">
-              {menuItem.children.map((child, childIndex) => <li key={childIndex}>
-                  <Link to={child.url || "#"}>{child.label}</Link>
-                </li>)}
-            </ul>}
+              {menuItem.children.map((child, childIndex) => 
+              <li key={childIndex}
+              className={child.children ? "has-dropdown" : ""}
+              >
+                  <Link to={child.url || "#"}>{child.label}
+                    {child.children && (
+                    <span>
+                      <FaAngleDown size={14} className="ms-1" />
+                    </span>
+                  )}
+                  </Link>
+
+                  {child.children && (
+                  <ul className="sub-menu">
+                    {child.children.map((subChild, subIndex) => (
+                      <li key={subIndex}>
+                        <Link to={subChild.url || "#"}>
+                          {subChild.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+
+                </li>
+              )}
+            </ul>
+            }
         </li>)}
     </ul>;
 };

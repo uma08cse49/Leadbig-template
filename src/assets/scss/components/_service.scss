@@ -396,7 +396,7 @@
                     text-transform: uppercase; 
                     display: inline-block;
                     &:hover {
-                        color: var(--ztc-text-text-8);
+                        color: var(--ztc-text-text-11);
                         transition: all .4s;
                     }
                     @media #{$xs} {
@@ -726,7 +726,7 @@
                         margin-top: 18px;
                         transition: all .4s;
                         &:hover {
-                            background: var(--ztc-text-text-8);
+                            background: var(--ztc-text-text-11);
                             transition: all .4s;
                             color: var(--ztc-text-text-4);
                         }

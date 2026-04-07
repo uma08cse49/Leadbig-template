@@ -104,7 +104,8 @@
   color: var(--ztc-text-text-1);
 
   span {
-    color: var(--ztc-text-text-2);
+    // color: var(--ztc-text-text-2);
+    color: var(--ztc-text-text-11);
   }
 }
 
@@ -120,7 +121,8 @@
   text-align: center;
   line-height: 56px;
   font-size: 18px;
-  color: var(--ztc-text-text-2);
+  // color: var(--ztc-text-text-2);
+  color: var(--ztc-text-text-11);
   left: 0;
   top: 0;
   height: 56px;
@@ -176,6 +178,7 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  
 }
 
 //  Page Progress Area //
@@ -186,7 +189,8 @@
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid #ffff00;
+  // border: 1px solid #ffff00;
+  border: 1px solid #F13A00;
   -webkit-transition: all 200ms ease-out;
   -o-transition: all 200ms ease-out;
   transition: all 200ms ease-out;

@@ -39,7 +39,7 @@ const page = () => {
                   Have Questions? Reach Out!
                 </h5>
                 <div className="space20"></div>
-                <h2>Connect with Renev Today</h2>
+                <h2>Connect with Leadbig Today</h2>
               </div>
 
               <div className="space40"></div>
@@ -53,7 +53,7 @@ const page = () => {
                     <div className="content">
                       <h4>Our Email</h4>
                       <Link to="mailto:eitechsolut@gmail.com">
-                        renevweb@gmail.com
+                        leadbig@gmail.com
                       </Link>
                     </div>
                   </div>

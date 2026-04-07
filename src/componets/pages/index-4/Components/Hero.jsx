@@ -24,18 +24,24 @@ const Hero = () => {
             <div className="hero-header-area text-center">
               <img src={ele30} alt="" className="elements30 aniamtion-key-2" />
               <h5>
-                <img src={logo} alt="" /> Designing the Future of Your Brand
+                <img src={logo} alt="" /> Powering the Complete Digital Cycle
               </h5>
               <div className="space32"></div>
               <h1 className="text-anime-style-3">
-                Pixel-Perfect{" "}
+                BUILD SMART{" "}
                 <img src={ele29} alt="" className="elements1 keyframe5" />
               </h1>
               <div className="space40 d-md-block d-none"></div>
               <div className="space16 d-block d-md-none"></div>
               <h1 className="text-anime-style-3">
-                <img src={image3} alt="" className="others-img1" /> Web Design
+                <img src={image3} alt="" className="others-img1" /> GROW BIGGER
               </h1>
+              <p style={{ color: "white" ,marginTop: "15px" }}>At Leadbig.in, we don’t just build your
+digital presence — we scale it. From
+custom web development and software
+solutions to performance marketing and
+SEO, we deliver everything your business
+needs to compete and win online.</p>
               <div className="space40"></div>
               <div className="btn-area1">
                 <Link to="/project" style={{

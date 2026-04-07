@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "@/assets/img/logo/logo1.png";
+import logo from "@/assets/img/logo/Leadbig-logo.png";
 import { FaAngleDown, FaAngleRight, FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationDot, FaPhone, FaTwitter, FaXmark } from "react-icons/fa6";
 import image1 from "@/assets/img/all-images/demo/demo-img1.png";
 import image2 from "@/assets/img/all-images/demo/demo-img2.png";
@@ -23,11 +23,12 @@ const homePages = [
 //   title: "RENEV - Homepage 03",
 //   url: "/index-3"
 // }, 
-{
-  image: image4,
-  title: "RENEV - Homepage 04",
-  url: "/index-4"
-}];
+// {
+//   image: image4,
+//   title: "RENEV - Homepage 04",
+//   url: "/index-4"
+// }
+];
 const menuItems = [{
   key: "pages",
   label: "Pages",

@@ -19,24 +19,31 @@ const ServiceSingle = lazy(() => import("../componets/pages/service-single"));
 export const landingRoutes = [
   {
   path: "/",
-  name: "index1",
-  element: <Index1 />
-}, 
-{
-  path: "/index-2",
-  name: "index2",
-  element: <Index2 />
-}, 
-{
-  path: "/index-3",
-  name: "index3",
-  element: <Index3 />
-}, {
-  path: "/index-4",
   name: "index4",
   element: <Index4 />
-}];
-export const pageRoutes = [{
+}, 
+// {
+//   path: "/index-2",
+//   name: "index2",
+//   element: <Index2 />
+// }, 
+// {
+//   path: "/index-3",
+//   name: "index3",
+//   element: <Index3 />
+// }, {
+//   path: "/index-4",
+//   name: "index4",
+//   element: <Index4 />
+// }
+];
+export const pageRoutes = [
+  {
+    path:"/index-4",
+    name:"home",
+    element: <Index4 />
+  },
+  {
   path: "/about",
   name: "about",
   element: <About />

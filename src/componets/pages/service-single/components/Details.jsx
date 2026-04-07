@@ -3,7 +3,7 @@ import service11 from "@/assets/img/all-images/service/service-img11.png";
 import service12 from "@/assets/img/all-images/service/service-img12.png";
 import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import check from "@/assets/img/icons/check1.svg";
+import check from "@/assets/img/icons/check3.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 const Details = () => {
   const [progressValues, setProgressValues] = useState([0, 0]);
@@ -30,10 +30,9 @@ const Details = () => {
         <h2>User Interface/experience design</h2>
         <div className="space16"></div>
         <p>
-          In today’s digital landscape, first impressions are critical. Our
-          UI/UX design approach is centered on creating seamless, engaging
-          experiences that captivate users from the moment they land on your
-          site. By focusing on intuitive navigation, appealing visuals.
+          Great design is more than just looks—it’s about how it works. 
+          We create seamless, user-friendly experiences that combine smart navigation with stunning visuals, 
+          ensuring every interaction feels natural and engaging.
         </p>
         <div className="space10"></div>
         <Row>
@@ -102,10 +101,7 @@ const Details = () => {
         <h3>What We Offer in UI/UX Design?</h3>
         <div className="space20"></div>
         <p>
-          nvesting in exceptional UI/UX design is key to creating a digital
-          experience that not only looks beautiful but functions effortlessly.
-          At every stage, our approach is user-centered, which means we
-          prioritize intuitive navigation, responsive design, clear.
+          At Leadbig.in, we create user-centric designs that are not just visually appealing but also highly functional. Our UI/UX design services focus on delivering seamless digital experiences that engage users, improve usability, and drive conversions.
         </p>
         <div className="space20"></div>
         <Row>
@@ -114,7 +110,7 @@ const Details = () => {
               <div className="progressbar">
                 <div className="circle" data-percent="96">
                   <CircularProgressbar value={progressValues[0]} styles={buildStyles({
-                  pathColor: "#CEF12B"
+                  pathColor: "#F13A00"
                 })} />
                   <canvas width="80" height="80"></canvas>
                   <div className="count">96%</div>
@@ -132,7 +128,7 @@ const Details = () => {
               <div className="progressbar">
                 <div className="circle" data-percent="92">
                   <CircularProgressbar value={progressValues[0]} styles={buildStyles({
-                  pathColor: "#CEF12B"
+                  pathColor: "#F13A00"
                 })} />
                   <canvas width="80" height="80"></canvas>
                   <div className="count">92%</div>
@@ -150,7 +146,7 @@ const Details = () => {
               <div className="progressbar">
                 <div className="circle" data-percent="92">
                   <CircularProgressbar value={progressValues[0]} styles={buildStyles({
-                  pathColor: "#CEF12B"
+                  pathColor: "#F13A00"
                 })} />
                   <canvas width="80" height="80"></canvas>
                   <div className="count">92%</div>

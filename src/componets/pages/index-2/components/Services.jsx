@@ -82,8 +82,8 @@ const Services = () => {
                       <div className="arrow">
                         <Link to="/service-single">
                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                            <path d="M9.16724 34.8312L31.1672 12.8312" stroke="#FEFE1F" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M13.2922 12.8312H31.1672V30.7062" stroke="#FEFE1F" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M9.16724 34.8312L31.1672 12.8312" stroke="#F13A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M13.2922 12.8312H31.1672V30.7062" stroke="#F13A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         </Link>
                       </div>

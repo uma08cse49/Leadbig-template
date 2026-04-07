@@ -1,6 +1,6 @@
 import bars from "@/assets/img/icons/bars-icons1.svg";
 import search from "@/assets/img/icons/search1.svg";
-import logo1 from "@/assets/img/logo/logo1.png";
+import logo1 from "@/assets/img/logo/Leadbig-logo.png";
 import { useEffect, useRef, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaBarsStaggered } from "react-icons/fa6";
