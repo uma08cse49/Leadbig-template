@@ -20,38 +20,37 @@ const About = () => {
             <div className="about-header heading3">
               <h5 data-aos="fade-left" data-aos-duration="800">
                 <img src={subLogo4} alt="" />
-                Driven to the Creativity
+                INTEGRATED DIGITAL EXPERTIS
               </h5>
               <div className="space20"></div>
               <h2 className="text-anime-style-3">
-                Crafting Website with Purpose and Passions
+                FROM DEVELOPMENT TO GROWTH - WE DELIVER BOTH
               </h2>
               <div className="space16"></div>
               <p data-aos="fade-left" data-aos-duration="900">
-                Our team of designers, developers, and strategists are
-                passionate about bringing your brand’s vision to life through
-                innovative user.
+                At Leadbig.in, we focus on delivering high-quality digital solutions backed by strong execution and attention to detail. 
+                Our team ensures every project is built with precision, optimised for performance, and aligned with your business goal.
               </p>
               <div className="space32"></div>
               <div className="bg-progress" data-aos="fade-left" data-aos-duration="1000">
                 <div className="progress-bar">
                   <label>
-                    User Interface Designer <span>98%</span>
+                    Web & Software Development <span>95%</span>
                   </label>
                   <div className="progress">
                     <div className="progress-inner" style={{
-                    width: "98%"
+                    width: "95%"
                   }}></div>
                   </div>
                 </div>
 
                 <div className="progress-bar m-0">
                   <label>
-                    WordPress Developer <span>99%</span>
+                    Digital Marketing Execution <span>92%</span>
                   </label>
                   <div className="progress">
                     <div className="progress-inner" style={{
-                    width: "99%"
+                    width: "92%"
                   }}></div>
                   </div>
                 </div>
@@ -61,7 +60,7 @@ const About = () => {
                 <Link to="/contact" className="vl-btn3" style={{
                 overflow: "hidden"
               }}>
-                  Schedule a Consultation
+                  BOOK A FREE CONSULTATION
                 </Link>
               </div>
             </div>

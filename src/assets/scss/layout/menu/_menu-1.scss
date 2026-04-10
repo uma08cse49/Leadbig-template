@@ -1485,15 +1485,22 @@
                         margin-right: 0;
                         display: block;
                         text-align: start;
+                        list-style: none;
+                        margin-bottom: 4px;
+
+
 
                         & a {
                             color: var(--ztc-text-text-1);
                             display: inline-block;
-                            font-size: var(--ztc-font-size-font-s18);
+                            font-size: var(--ztc-font-size-font-s14);
                             position: relative;
                             z-index: 1;
                             padding: 12px 0 0 0;
                             font-weight: var(--ztc-weight-medium);
+                            text-decoration: none;
+                            display: block;       //newly added
+                            padding-left: 10px;     //newly added
 
                             &::after {
                                 position: absolute;
@@ -1507,6 +1514,11 @@
                                 z-index: 1;
                             }
 
+                            // .sub-menu li a::before {
+                            //     content: "▸";
+                            //     color: #ff4d00; /* orange like your UI */
+                            //     }
+
                             &:hover {
                                 &::after {
                                     width: 50%;
@@ -1514,9 +1526,18 @@
                                 }
                             }
 
-                            &:before {
-                                display: none;
-                            }
+                            // &:before {
+                            //     display: none;
+                            // }
+                        }
+
+                        .menu-title {
+                            color: #fff;
+                            font-weight: bold;
+                            display: block;
+                            // margin-top: 10px;
+                            // margin-bottom: 10px;
+                            margin: 8px 0 2px 0;
                         }
 
                         & .sub-menu {
@@ -1527,6 +1548,7 @@
                             transition: .4s;
                             transform-origin: top;
                             transform: scale(1, 0);
+                            
                         }
 
                         &:hover {
@@ -1561,6 +1583,12 @@
                 }
 
             }
+
+            .sub-menu li a::before {
+                content: "▸";
+                color: #ff4d00;
+                margin-right: 8px;
+                }
         }
     }
 

@@ -62,9 +62,9 @@ const NavBar4 = () => {
                       Let’s Build Together
                     </Link>
                   </span>
-                  <button className="hamburger_menu" onClick={() => setOpen(true)}>
+                  {/* <button className="hamburger_menu" onClick={() => setOpen(true)}>
                     <img src={icon} alt="" />
-                  </button>
+                  </button> */}
                 </div>
                 <div className="vl-header-action-item d-block d-lg-none">
                   <button type="button" className="vl-offcanvas-toggle" onClick={() => setIsMenuOpen(true)}>

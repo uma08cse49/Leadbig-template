@@ -1,37 +1,131 @@
 import React, { useState } from "react";
 import logo from "@/assets/img/logo/Leadbig-logo.png";
-import { FaAngleDown, FaAngleRight, FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationDot, FaPhone, FaTwitter, FaXmark } from "react-icons/fa6";
+import { FaAngleDown, FaAngleRight, FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationDot, FaPhone, FaXTwitter, FaXmark } from "react-icons/fa6";
 import image1 from "@/assets/img/all-images/demo/demo-img1.png";
 import image2 from "@/assets/img/all-images/demo/demo-img2.png";
 import image3 from "@/assets/img/all-images/demo/demo-img3.png";
 import image4 from "@/assets/img/all-images/demo/demo-img4.png";
 import { Col, Collapse, Offcanvas, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const homePages = [
-//   {
-//   image: image1,
-//   title: "RENEV - Homepage 01",
-//   url: "/index-1"
-// }, 
-// {
-//   image: image2,
-//   title: "RENEV - Homepage 02",
-//   url: "/index-2"
-// }, 
-// {
-//   image: image3,
-//   title: "RENEV - Homepage 03",
-//   url: "/index-3"
-// }, 
-// {
-//   image: image4,
-//   title: "RENEV - Homepage 04",
-//   url: "/index-4"
-// }
+
+const homePages = [{
+    label: "Home",
+    url: "/index-4"
+}
+// //   {
+// //   image: image1,
+// //   title: "RENEV - Homepage 01",
+// //   url: "/index-1"
+// // }, 
+// // {
+// //   image: image2,
+// //   title: "RENEV - Homepage 02",
+// //   url: "/index-2"
+// // }, 
+// // {
+// //   image: image3,
+// //   title: "RENEV - Homepage 03",
+// //   url: "/index-3"
+// // }, 
+// // {
+// //   image: image4,
+// //   title: "RENEV - Homepage 04",
+// //   url: "/index-4"
+// // }
 ];
-const menuItems = [{
-  key: "pages",
-  label: "Pages",
+const menuItems = [
+// {
+//   key: "pages",
+//   label: "Pages",
+//   links: [{
+//     url: "/about",
+//     text: "About Us"
+//   }, {
+//     url: "/team",
+//     text: "Our Team"
+//   }, {
+//     url: "/testimonial",
+//     text: "Testimonials"
+//   }, {
+//     url: "/contact",
+//     text: "Contact Us"
+//   }, {
+//     url: "/faq",
+//     text: "FAQ,s"
+//   }, {
+//     url: "/404",
+//     text: "404"
+//   }]
+// }, 
+
+
+{
+  key: "services",
+  label: "Services",
+  links: [
+    {
+      title: "Development",
+      isTitle: true
+    },
+    {
+    url: "/service",
+    text: "Web Development"
+    }, 
+    {
+        url: "/service-single",
+        text: "Software Solutions"
+    },
+     {
+        url: "/service-single",
+        text: "UI/UX Design"
+    },
+
+    {
+      title: "Marketing",
+      isTitle: true
+    },
+    {
+      url: "/digital-marketing",
+      text: "Digital Marketing"
+    },
+    {
+      url: "/seo",
+      text: "SEO"
+    },
+    {
+      url: "/lead-generation",
+      text: "Lead Generation"
+    }
+]
+}, 
+{
+  key: "projects",
+  label: "Projects",
+  links: [{
+    url: "/project",
+    text: "All Projects"
+  }, {
+    url: "/project-single",
+    text: "Case Studies"
+  }]
+}, 
+{
+  key: "insights",
+  label: "Insights",
+  links: [{
+    url: "/blog-one",
+    text: "Articles"
+  }, {
+    url: "/blog-two",
+    text: "Industry Insights"
+  }, {
+    url: "/blog-single",
+    text: "Guides"
+  }]
+},
+{
+  key: "about",
+  label: "About",
   links: [{
     url: "/about",
     text: "About Us"
@@ -39,52 +133,19 @@ const menuItems = [{
     url: "/team",
     text: "Our Team"
   }, {
-    url: "/testimonial",
-    text: "Testimonials"
-  }, {
-    url: "/contact",
-    text: "Contact Us"
-  }, {
-    url: "/faq",
-    text: "FAQ,s"
-  }, {
-    url: "/404",
-    text: "404"
-  }]
-}, {
-  key: "services",
-  label: "Services",
-  links: [{
-    url: "/service",
-    text: "Our Service"
-  }, {
-    url: "/service-single",
-    text: "Service Single"
-  }]
-}, {
-  key: "project",
-  label: "Project",
-  links: [{
-    url: "/project",
-    text: "Project"
-  }, {
-    url: "/project-single",
-    text: "Project Single"
-  }]
-}, {
-  key: "blog",
-  label: "Blogs",
-  links: [{
-    url: "/blog-one",
-    text: "Blog One"
-  }, {
-    url: "/blog-two",
-    text: "Blog Two"
-  }, {
     url: "/blog-single",
-    text: "Blog Single"
+    text: "Testimonials"
   }]
-}];
+},
+{
+  key: "contact",
+  label: "Contact",
+  links: [{
+    url: "/about",
+    text: "Contact Us"
+  }]
+}
+];
 const MobileMenu = ({
   show,
   handleClose
@@ -170,11 +231,26 @@ const MobileMenu = ({
                                     </a>
                                     <Collapse in={openDropdown === key}>
                                         <ul style={{
-                  paddingLeft: "10px"
-                }}>
-                                            {links.map(link => <li key={link.url}>
+                                            paddingLeft: "10px"
+                                            }}>
+                                            {/* {links.map(link => <li key={link.url}>
                                                     <Link to={link.url}>{link.text}</Link>
-                                                </li>)}
+                                                </li>)} */}
+
+                                                {links.map((link, index) => (
+                                                <li key={index}>
+                                                    
+                                                    {/* ✅ Section Title */}
+                                                    {link.isTitle ? (
+                                                    <span className="menu-title">{link.title}</span>
+                                                    ) : (
+                                                    <Link to={link.url}>
+                                                        {link.text}
+                                                    </Link>
+                                                    )}
+
+                                                </li>
+                                                ))}
                                         </ul>
                                     </Collapse>
                                 </li>)}
@@ -189,19 +265,19 @@ const MobileMenu = ({
                     <div className="space20"></div>
                     <span>
                         <Link to="">
-                            <FaEnvelope /> hello@exdos.com
+                            <FaEnvelope /> info@leadbig.in
                         </Link>
                     </span>
                     <br />
                     <span>
                         <Link to="">
-                            <FaPhone /> +57 9954 6476.about
+                            <FaPhone /> +91 99404 27777.about
                         </Link>
                     </span>
                     <br />
                     <span>
                         <Link to="">
-                            <FaLocationDot /> Bhemeara, Kushtia
+                            <FaLocationDot />No. 110/2, Agaram,Perambur Purasawalkam,Chennai - 600082
                         </Link>
                     </span>
                 </div>
@@ -210,16 +286,16 @@ const MobileMenu = ({
                     <h3 className="vl-offcanvas-sm-title">Follow Us</h3>
                     <div className="space20" />
                     <div className="d-flex gap-2">
-                        <Link to="#">
+                        <Link to="https://www.facebook.com/profile.php?id=61579026411412&sk=about">
                             <FaFacebookF />
                         </Link>
-                        <Link to="#">
-                            <FaTwitter />
+                        <Link to="https://x.com/LeadbigOfficial">
+                            <FaXTwitter />
                         </Link>
                         <Link to="#">
                             <FaLinkedinIn />
                         </Link>
-                        <Link to="#">
+                        <Link to="https://www.instagram.com/leadbigofficial">
                             <FaInstagram />
                         </Link>
                     </div>

@@ -4,12 +4,13 @@ import NavBar from "./NavBar/NavBar";
 import BackToTop from "./BackToTop";
 import CustomCursor from "./CustomCursor";
 import Footer from "./pages/index-1/components/Footer";
+import NavBar4 from "./NavBar/NavBar4";
 const MainLayout = ({
   children
 }) => {
   return <>
       <Suspense fallback={<Loader />}>
-        <NavBar />
+        <NavBar4 />
         {children}
         <Footer />
         <BackToTop />

@@ -17,39 +17,43 @@ import { Link } from "react-router-dom";
 const Service = () => {
   const services = [{
     id: "home",
-    title: "Branding Identity",
+    title: "Web and Software Development",
+    btnText: "BUILD YOUR PLATFORM",
     icon: service1,
-    heading: "SEO Marketing",
-    subHeading: "Unlock the Power SEO to Grow Your Business",
-    description: "At SEOMAX, we specialize in helping businesses achieve top rankings on search engines through effective SEO marketing of our team experts.",
-    points: ["Increased Website Traffic", "Cost-Effective Marketing"],
+    heading: "Web and Software Development",
+    subHeading: "ENGINEERED FOR PERFORMANCE.BUILD FOR SCALE.",
+    description: "We create robust digital infrastructure that supports your business as it grows.Every solution is designed to be fast,flexible and ready for future expansion.",
+    points: ["High performanve Web & Software Systems", "Automation and API Integrations", "Future Ready Scalable Architecture"],
     image: service13
   }, {
     id: "profile",
-    title: "UI/UX Designer",
+    title: "UI/UX & Product Design",
+    btnText: "DESIGN YOUR EXPERIENCE",
     icon: service2,
-    heading: "SEO Marketing",
-    subHeading: "Unlock the Power SEO to Grow Your Business",
-    description: "At SEOMAX, we specialize in helping businesses achieve top rankings on search engines through effective SEO marketing of our team experts.",
-    points: ["Increased Website Traffic", "Cost-Effective Marketing"],
+    heading: "UI/UX & Product Design",
+    subHeading: "DESIGNED FOR USER AND OPTIMIZED FOR RESULTS.",
+    description: "We create a seamless digital experience that reduce friction,improve usability and guide users towards meaningful actions - from first click to final conversion ",
+    points: ["UX Strategy and wireframing", "Hi-Impact UI Design","Coversion and Usability optimisation"],
     image: service13
   }, {
     id: "contact",
-    title: "SEO Marketing",
+    title: "Growth Marketing",
+    btnText: "START GROWING",
     icon: service3,
-    heading: "SEO Marketing",
-    subHeading: "Unlock the Power SEO to Grow Your Business",
-    description: "At SEOMAX, we specialize in helping businesses achieve top rankings on search engines through effective SEO marketing of our team experts.",
-    points: ["Increased Website Traffic", "Cost-Effective Marketing"],
+    heading: "Growth Marketing",
+    subHeading: "DRIVE TARGETED TRAFFIC.GENERATE CONSISTENT LEADS.",
+    description: "We design and xecute marketing Strategies backed by data,ensuring every campaign drives visibility,engagement and rea business outcomes.",
+    points: ["SEO and Organic Growth", "Paid Advertising(Google & Meta)","Conversion Tracking & Optimisation"],
     image: service13
   }, {
     id: "contact1",
-    title: "E-commerce Shop",
+    title: "E-commerce & Conversion",
+    btnText: "START SELLING SMARTER",
     icon: service4,
-    heading: "SEO Marketing",
-    subHeading: "Unlock the Power SEO to Grow Your Business",
-    description: "At SEOMAX, we specialize in helping businesses achieve top rankings on search engines through effective SEO marketing of our team experts.",
-    points: ["Increased Website Traffic", "Cost-Effective Marketing"],
+    heading: "E-commerce & Conversion",
+    subHeading: "DESIGNED TO SELL.OPTIMISED TO SCALE.",
+    description: "We create hign performance commerce systems that go beyond just selling - driving repeat purchases, higher conversions and long-term customer value.",
+    points: ["Custom E-commerce platforms", "Sales funnel architecture", "Conversion rate optimisation"],
     image: service13
   }];
   const [activeTab, setActiveTab] = useState("home");
@@ -64,10 +68,10 @@ const Service = () => {
           <Col lg={5} className="m-auto text-center">
             <div className="heading3 space-margin60">
               <h5>
-                <img src={logo4} alt="" /> Excellence in Every Pixel
+                <img src={logo4} alt="" /> TRUSTED ACROSS INDUSTRIES
               </h5>
               <div className="space20"></div>
-              <h2>Innovative Services for Modern Brands</h2>
+              <h2>BUILD TO PERFORM. DESIGNED TO SCALE.</h2>
             </div>
           </Col>
         </Row>
@@ -111,7 +115,7 @@ const Service = () => {
                             <Link to="/contact" className="vl-btn3" style={{
                           overflow: "hidden"
                         }}>
-                              Schedule a Consultation
+                              {service.btnText}
                             </Link>
                           </div>
                         </div>

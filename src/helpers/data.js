@@ -90,42 +90,82 @@ export const menuItems = [{
 // }
 // ===============================================================================================
 
- {
+//  {
+//     label: "Services",
+//     children: [
+//       {
+//         label: "Development",
+//         children: [
+//           {
+//             label: "Web Development",
+//             url: "/service"
+//           },
+//           {
+//             label: "Software Solutions",
+//             url: "/service"
+//           },
+//           {
+//             label: "UI/UX Design",
+//             url: "/service-single"
+//           }
+//         ]
+//       },
+//       {
+//         label: "Digital Marketing",
+//         children: [
+//           {
+//             label: "Digital Marketing",
+//             url: "/service-single"
+//           },
+//           {
+//             label: "SEO & Performance Marketing",
+//             url: "/service-single"
+//           },
+//           {
+//             label: "Lead Generation",
+//             url: "/service-single"
+//           }
+//         ]
+//       }
+//     ]
+//   },
+
+
+{
     label: "Services",
     children: [
       {
         label: "Development",
-        children: [
-          {
-            label: "Web Development",
-            url: "/service"
-          },
-          {
-            label: "Software Solutions",
-            url: "/service"
-          },
-          {
-            label: "UI/UX Design",
-            url: "/service-single"
-          }
-        ]
+        isTitle: true,
+      },
+      {
+        label: "Web Development",
+        url: "/web-development"
+      },
+      {
+        label: "Software Solutions",
+        url: "/software"
+      },
+      {
+        label: "UI/UX Design",
+        url: "/ui-ux"
+      },
+
+      {
+        label: "Marketing",
+        isTitle: true,
       },
       {
         label: "Digital Marketing",
-        children: [
-          {
-            label: "Digital Marketing",
-            url: "/service-single"
-          },
-          {
-            label: "SEO & Performance Marketing",
-            url: "/service-single"
-          },
-          {
-            label: "Lead Generation",
-            url: "/service-single"
-          }
-        ]
+        url: "/digital-marketing"
+      },
+      {
+        label: "SEO & Performance Marketing",
+        url: "/seo"
+      },
+      {
+        label: "Lead Generation",
+        url: "/lead-generation"
       }
     ]
   },

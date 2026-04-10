@@ -7,13 +7,14 @@ import email from "@/assets/img/icons/email1.svg";
 import global1 from "@/assets/img/icons/global1.svg";
 import other from "@/assets/img/all-images/others/others-img2.png";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaXTwitter } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   const socialLinks = [{
     icon: <FaFacebookF />,
     url: "https://www.facebook.com/profile.php?id=61579026411412&sk=about"
   }, {
-    icon: <FaLinkedinIn />,
+    icon: <FaXTwitter />,
     url: "https://x.com/LeadbigOfficial"
   }, {
     icon: <FaInstagram />,

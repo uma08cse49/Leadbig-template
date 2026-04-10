@@ -7,23 +7,41 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const industriesData = [{
   img: serve,
-  title: "Business Consulting"
+  title: "STARTUPS"
 }, {
   img: serve2,
-  title: "Medical Healthcare"
+  title: "GROWING BUSINESSES"
 }, {
   img: serve3,
-  title: "Bank/Insurances"
+  title: "ECOMMERCE"
 }, {
   img: serve,
-  title: "Sass/Software"
+  title: "HEALTHCARE"
 }, {
   img: serve2,
-  title: "Media Entertainment"
+  title: "FINANCIAL SERVICES"
 }, {
   img: serve3,
-  title: "Website Design"
-}];
+  title: "EDTECH"
+},
+{
+  img: serve,
+  title: "REAL ESTATE"
+},
+{
+  img: serve2,
+  title: "REAL ESTATE"
+},
+{
+  img: serve3,
+  title: "SAAS PLATFORM"
+},
+{
+  img: serve,
+  title: "ENTERPRISE SOLUTIONS"
+},
+
+];
 const repeatedIndustries = [...industriesData, ...industriesData, ...industriesData];
 const Industries = () => {
   return <div className="serve-section-area sp10">
@@ -35,7 +53,7 @@ const Industries = () => {
               color: "#fff"
             }}>
                 <img src={sublogo} alt="" />
-                Industries we serve
+                Trusted Across Industries
               </h5>
             </div>
           </Col>

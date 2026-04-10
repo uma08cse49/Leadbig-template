@@ -37,7 +37,7 @@ const AppMenu = ({
               </div>
             </div>}
 
-          {menuItem.children && <ul className="sub-menu">
+          {/* {menuItem.children && <ul className="sub-menu">
               {menuItem.children.map((child, childIndex) => 
               <li key={childIndex}
               className={child.children ? "has-dropdown" : ""}
@@ -66,7 +66,25 @@ const AppMenu = ({
                 </li>
               )}
             </ul>
-            }
+            } */}
+
+
+            {menuItem.children && (
+            <ul className="sub-menu">
+              {menuItem.children.map((child, index) => (
+                <li key={index}>
+                  
+                  {/* ✅ Section Title */}
+                  {child.isTitle ? (
+                    <span className="menu-title">{child.label}</span>
+                  ) : (
+                    <Link to={child.url}>{child.label}</Link>
+                  )}
+
+                </li>
+              ))}
+            </ul>
+          )}
         </li>)}
     </ul>;
 };

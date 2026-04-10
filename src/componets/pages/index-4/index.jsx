@@ -29,7 +29,7 @@ const page = () => {
         <Team />
         <Blog />
         <SliderEnd />
-        <Footer />
+        {/* <Footer /> */}
         <BackToTop />
       </Suspense>
     </>;
