@@ -140,7 +140,7 @@ export const menuItems = [{
       },
       {
         label: "Web Development",
-        url: "/web-development"
+        url: "/ui-ux"
       },
       {
         label: "Software Solutions",
@@ -148,7 +148,7 @@ export const menuItems = [{
       },
       {
         label: "UI/UX Design",
-        url: "/ui-ux"
+        url: "/service-single"
       },
 
       {
@@ -215,6 +215,9 @@ export const menuItems = [{
     label: "Testimonials",
     url: "/testimonial"
   }]
+},
+{
+  label: "Contact",
+  url: "/contact"
 }
-
 ];

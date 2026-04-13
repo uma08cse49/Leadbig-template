@@ -1416,6 +1416,8 @@
     .vl-main-menu {
         & ul {
             text-align: center;
+            padding: 0px;
+            margin: -17px;
 
             &>li {
                 display: inline-block;
