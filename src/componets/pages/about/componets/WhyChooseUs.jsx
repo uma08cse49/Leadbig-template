@@ -3,6 +3,7 @@ import ele8 from "@/assets/img/elements/elements8.png";
 import ele9 from "@/assets/img/elements/elements9.png";
 import { Container, Row, Col } from "react-bootstrap";
 
+
 const WhyChooseUs = () => {
   const features = [
     {
@@ -31,6 +32,28 @@ const WhyChooseUs = () => {
     }
   ];
 
+  const handleMouseMove = (e) => {
+  const card = e.currentTarget;
+  const rect = card.getBoundingClientRect();
+
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+
+  const rotateX = -(y - centerY) / 10;
+  const rotateY = (x - centerX) / 10;
+
+  card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+};
+
+const handleMouseLeave = (e) => {
+  const card = e.currentTarget;
+  card.style.transform =
+    "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+};
+
   return (
     <div className="whychoose-section-area sp6">
       
@@ -56,8 +79,22 @@ const WhyChooseUs = () => {
 
         <Row>
           {features.map((item, index) => (
+            // <div
+            //   className="why-card"
+            //   data-aos="fade-up"
+            //   data-aos-delay={index * 100}
+            // >
             <Col lg={4} md={6} key={index}>
               <div className="choose-box" data-aos="fade-up">
+
+                <div
+                  className="why-card"
+                  onMouseMove={(e) => handleMouseMove(e)}
+                  onMouseLeave={(e) => handleMouseLeave(e)}
+                ></div>
+                <div className="icon-box">
+                  <i className="bi bi-star"></i>
+                </div>
                 <h4>{item.title}</h4>
                 <p>{item.desc}</p>
               </div>
