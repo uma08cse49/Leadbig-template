@@ -16,6 +16,11 @@ const ProjectSingle = lazy(() => import("../componets/pages/project-single"));
 const Project = lazy(() => import("../componets/pages/project"));
 const Services = lazy(() => import("../componets/pages/service"));
 const ServiceSingle = lazy(() => import("../componets/pages/service-single"));
+const Webdevelopment = lazy(() => import("../componets/pages/WebDevelopment"));
+const SoftwareSolutions = lazy(() => import("../componets/pages/SoftwareSolutions"));
+const DigitalMarketing = lazy(() => import("../componets/pages/Digitalmarketing"));
+
+
 export const landingRoutes = [
   {
   path: "/",
@@ -95,4 +100,20 @@ export const pageRoutes = [
   path: "/service-single",
   name: "service-single",
   element: <ServiceSingle />
-}];
+},
+{
+  path: "/WebDevelopment",
+  name: "WebDevelopment",
+  element: <Webdevelopment />
+},
+{
+  path: "/SoftwareSolutions",
+  name: "SoftwareSolutions",
+  element: <SoftwareSolutions />
+},
+{
+  path: "/digital-marketing",
+  name: "Digitalmarketing",
+  element: <DigitalMarketing />
+}
+];

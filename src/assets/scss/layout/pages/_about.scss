@@ -562,6 +562,91 @@
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
+
+
+/* ── Entrance animation ───────────────────────── */
+.wcu-card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+  transition:
+    opacity   0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0ms),
+    transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0ms),
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+  will-change: transform, opacity;
+
+  /* card base styles */
+  border-radius: 16px;
+  padding: 32px 28px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  cursor: default;
+  transform-style: preserve-3d;
+}
+
+/* Triggered by IntersectionObserver */
+.wcu-card.wcu-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* ── Hover lift + glow ────────────────────────── */
+.wcu-card:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 102, 255, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, #f0f6ff 0%, #ffffff 100%);
+}
+
+/* ── Icon ─────────────────────────────────────── */
+.wcu-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e8f0fe, #dbeafe);
+  margin-bottom: 20px;
+  transition: background 0.35s ease, transform 0.35s ease;
+}
+
+.wcu-icon-wrap i {
+  font-size: 1.5rem;
+  color: #2563eb;
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.wcu-card:hover .wcu-icon-wrap {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  transform: rotate(-6deg) scale(1.1);
+}
+
+.wcu-card:hover .wcu-icon-wrap i {
+  color: #ffffff;
+}
+
+/* ── Heading fade-up ──────────────────────────── */
+.wcu-heading {
+  animation: wcuHeadingIn 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes wcuHeadingIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Reduced motion respect ───────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .wcu-card,
+  .wcu-heading {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 // ========================================= OUR PROCESS =======================================
 
 // How we Work(OUR PROCESS) Section

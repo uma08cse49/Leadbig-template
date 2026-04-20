@@ -140,11 +140,11 @@ export const menuItems = [{
       },
       {
         label: "Web Development",
-        url: "/ui-ux"
+        url: "/Webdevelopment"
       },
       {
         label: "Software Solutions",
-        url: "/software"
+        url: "/SoftwareSolutions"
       },
       {
         label: "UI/UX Design",

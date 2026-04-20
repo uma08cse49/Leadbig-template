@@ -1,0 +1,173 @@
+/* ── Section background (matches Mission section) ── */
+.wcu-section {
+  position: relative;
+  background: linear-gradient(135deg, #0a0a0a 0%, #111318 50%, #0d0f14 100%);
+  overflow: hidden;
+}
+
+/* Dot-grid overlay */
+.wcu-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ambient glow blobs */
+.wcu-section::before,
+.wcu-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+.wcu-section::before {
+  width: 400px;
+  height: 400px;
+  background: rgba(99, 102, 241, 0.09);
+  top: -80px;
+  right: -60px;
+}
+.wcu-section::after {
+  width: 340px;
+  height: 340px;
+  background: rgba(236, 72, 153, 0.07);
+  bottom: -60px;
+  left: -80px;
+}
+
+/* ── Heading ──────────────────────────────────── */
+.wcu-heading {
+  animation: wcuHeadingIn 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.wcu-section .heading1 h5 {
+  color: rgba(241, 245, 249, 0.65);
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+}
+.wcu-section .heading1 h2 {
+  color: #f1f5f9;
+}
+
+@keyframes wcuHeadingIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Card ─────────────────────────────────────── */
+.wcu-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 36px 30px;
+  height: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+  cursor: default;
+
+  /* entrance state */
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+  transition:
+    opacity    0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0ms),
+    transform  0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0ms),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+  will-change: transform, opacity;
+}
+
+/* Triggered by IntersectionObserver */
+.wcu-card.wcu-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* .wcu-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+} */
+
+/* ── Replace your existing hover rules with these ── */
+
+.wcu-card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(99, 102, 241, 0.2);
+  background: rgba(99, 102, 241, 0.08);  /* subtle indigo tint, stays dark */
+}
+
+
+
+/* Top accent bar */
+.wcu-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  border-radius: 20px 20px 0 0;
+}
+
+/* ── Icon ─────────────────────────────────────── */
+.wcu-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(99, 102, 241, 0.15);
+  margin-bottom: 20px;
+  transition: background 0.35s ease, transform 0.35s ease;
+}
+
+/* ✅ Fix: target SVG rendered by react-icons */
+.wcu-icon-wrap svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ff5a1f;
+  transition: color 0.35s ease;
+}
+
+.wcu-card:hover .wcu-icon-wrap {
+  /* background: linear-gradient(135deg, #6366f1, #818cf8); */
+  background: #ff5a1f;
+  transform: rotate(-6deg) scale(1.1);
+}
+.wcu-card:hover .wcu-icon-wrap svg {
+  color: #ffffff;
+}
+
+/* ── Typography ───────────────────────────────── */
+.wcu-card h4 {
+  color: #f1f5f9;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.wcu-card p {
+  color: rgba(241, 245, 249, 0.6);
+  font-size: 0.93rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Reduced motion ───────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .wcu-card,
+  .wcu-heading {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
